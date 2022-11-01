@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">CalculatorApp</string>
+    <string name = "calc_memory_recall">MR</string>
+    <string name = "calc_memory_add">M+</string>
+    <string name = "calc_memory_sub">M-</string>
+    <string name = "calc_memory_clear">MC</string>
+    <string name = "calc_memory_store">MS</string>
+    <string name = "calc_backspace">del</string>
+    <string name="calc_button_clear">C</string>
+    <string name="calc_button_ce">CE</string>
+    <string name="calc_button_root">√</string>
+    <string name="calc_button_plus">+</string>
+    <string name="calc_button_7">7</string>
+    <string name="calc_button_8">8</string>
+    <string name="calc_button_9">9</string>
+    <string name="calc_button_minus">-</string>
+    <string name="calc_button_4">4</string>
+    <string name="calc_button_5">5</string>
+    <string name="calc_button_6">6</string>
+    <string name="calc_button_mul">x</string>
+    <string name="calc_button_1">1</string>
+    <string name="calc_button_2">2</string>
+    <string name="calc_button_3">3</string>
+    <string name="calc_button_div">/</string>
+    <string name="calc_button_dot">.</string>
+    <string name="calc_button_0">0</string>
+    <string name="calc_button_equals">=</string>
+    <string name="calc_button_mod">%</string>
+    <string name="calc_button_pow">^</string>
+    <string name="calc_button_inv">1/x</string>
+    <string name="calc_button_plusmin">+-</string>
+
+
+
 </resources>
