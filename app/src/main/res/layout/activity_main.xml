@@ -11,7 +11,7 @@
         android:layout_margin="10dp"
         android:gravity="center|right"
         android:textColor="#000000"
-        android:layout_weight="1"
+        android:layout_weight="@dimen/reg_btn"
         android:textSize="30sp" />
     <TextView
         android:id="@+id/calculatorScreen"
@@ -20,13 +20,13 @@
         android:layout_margin="10dp"
         android:gravity="center|right"
         android:textColor="#000000"
-        android:layout_weight="1"
+        android:layout_weight="@dimen/reg_btn"
         android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="@dimen/reg_btn"
         android:orientation="horizontal"
         android:weightSum="5">
 
@@ -34,23 +34,30 @@
             android:id="@+id/MC"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
+            android:background="@color/purple_200"
+            android:layout_margin="3dp"
+            android:onClick="onClearClick"
             android:text="@string/calc_memory_clear"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/MR"
             android:layout_width="0dp"
+            android:background="@color/purple_200"
+            android:layout_margin="3dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_memory_recall"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/MS"
             android:layout_width="0dp"
+            android:background="@color/purple_200"
+            android:layout_margin="3dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_memory_store"
             android:textSize="25sp" />
 
@@ -58,7 +65,9 @@
             android:id="@+id/mPlus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:background="@color/purple_200"
+            android:layout_margin="3dp"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_memory_add"
             android:textSize="25sp" />
 
@@ -66,42 +75,52 @@
             android:id="@+id/mMinus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:background="@color/purple_200"
+            android:layout_margin="3dp"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_memory_sub"
             android:textSize="25sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="@dimen/reg_btn"
         android:orientation="horizontal"
         android:weightSum="5">
 
         <Button
             android:id="@+id/clear"
             android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@color/colorFunc"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_clear"
             android:textSize="25sp" />
         <Button
             android:id="@+id/plusmin"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@color/colorFunc"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_plusmin"
             android:textSize="25sp" />
         <Button
             android:id="@+id/root"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@color/colorFunc"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_root"
             android:textSize="25sp" />
         <Button
             android:id="@+id/delete"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/colorFunc"
             android:layout_weight="2"
             android:text="@string/calc_backspace"
             android:textSize="25sp" />
@@ -109,84 +128,104 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="@dimen/reg_btn"
         android:orientation="horizontal"
         android:weightSum="5">
         <Button
             android:id="@+id/n7"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:background="@color/colorNumb"
+            android:layout_margin="3dp"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_7"
             android:textSize="25sp" />
         <Button
             android:id="@+id/n8"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:background="@color/colorNumb"
+            android:layout_margin="3dp"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_8"
             android:textSize="25sp" />
         <Button
             android:id="@+id/n9"
             android:layout_width="0dp"
+            android:background="@color/colorNumb"
+            android:layout_margin="3dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_9"
             android:textSize="25sp" />
         <Button
             android:id="@+id/division"
             android:layout_width="0dp"
+            android:background="@color/colorFunc"
+            android:layout_margin="3dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_div"
             android:textSize="25sp" />
         <Button
             android:id="@+id/procent"
             android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@color/colorFunc"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_mod"
             android:textSize="25sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="@dimen/reg_btn"
         android:orientation="horizontal"
         android:weightSum="5">
         <Button
             android:id="@+id/n4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:background="@color/colorNumb"
+            android:layout_margin="3dp"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_4"
             android:textSize="25sp" />
         <Button
             android:id="@+id/n5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_5"
+            android:background="@color/colorNumb"
+            android:layout_margin="3dp"
             android:textSize="25sp" />
         <Button
             android:id="@+id/n6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
+            android:background="@color/colorNumb"
+            android:layout_margin="3dp"
             android:text="@string/calc_button_6"
             android:textSize="25sp" />
         <Button
             android:id="@+id/multiplication"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="@dimen/reg_btn"
+            android:layout_margin="3dp"
+            android:background="@color/colorFunc"
             android:text="@string/calc_button_mul"
             android:textSize="25sp" />
         <Button
             android:id="@+id/inverse"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@color/colorFunc"
+            android:layout_weight="@dimen/reg_btn"
             android:text="@string/calc_button_inv"
             android:textSize="25sp" />
     </LinearLayout>
@@ -194,7 +233,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="@dimen/large_btn"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="match_parent"
@@ -205,20 +244,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="@dimen/large_btn"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="@dimen/reg_btn"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/n3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="@dimen/reg_btn"
+                        android:background="@color/colorNumb"
+                        android:layout_margin="3dp"
                         android:text="@string/calc_button_3"
                         android:textSize="25sp" />
 
@@ -226,7 +267,9 @@
                         android:id="@+id/n2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:background="@color/colorNumb"
+                        android:layout_margin="3dp"
+                        android:layout_weight="@dimen/reg_btn"
                         android:text="@string/calc_button_2"
                         android:textSize="25sp" />
                 </LinearLayout>
@@ -234,7 +277,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+
+                    android:layout_weight="@dimen/reg_btn"
                     android:orientation="vertical"
                     android:weightSum="0">
 
@@ -242,7 +286,9 @@
                         android:id="@+id/n0"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:background="@color/colorNumb"
+                        android:layout_margin="3dp"
+                        android:layout_weight="@dimen/reg_btn"
                         android:text="@string/calc_button_0"
                         android:textSize="25sp" />
                 </LinearLayout>
@@ -251,26 +297,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="@dimen/large_btn"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="@dimen/large_btn"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="@dimen/reg_btn"
                     android:orientation="vertical">
 
                     <Button
                         android:id="@+id/n1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:background="@color/colorNumb"
+                        android:layout_margin="3dp"
+                        android:layout_weight="@dimen/reg_btn"
                         android:text="@string/calc_button_1"
                         android:textSize="25sp" />
 
@@ -278,42 +326,49 @@
                         android:id="@+id/ndot"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="@dimen/reg_btn"
                         android:text="@string/calc_button_dot"
+                        android:layout_margin="3dp"
+                        android:background="@color/colorFunc"
                         android:textSize="25sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="@dimen/reg_btn"
                     android:orientation="vertical">
 
                     <Button
                         android:id="@+id/subtract"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="@dimen/reg_btn"
                         android:text="@string/calc_button_minus"
+                        android:layout_margin="3dp"
+                        android:background="@color/colorFunc"
                         android:textSize="25sp" />
                     <Button
                         android:id="@+id/addition"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="@dimen/reg_btn"
                         android:text="@string/calc_button_plus"
+                        android:layout_margin="3dp"
+                        android:background="@color/colorFunc"
                         android:textSize="25sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="@dimen/reg_btn"
                     android:orientation="vertical">
                     <Button
                         android:id="@+id/equals"
                         android:layout_width="match_parent"
-                        android:background="@color/calcAccent"
+                        android:background="@color/colorAccent"
+                        android:layout_margin="3dp"
                         android:layout_height="match_parent"
                         android:text="@string/calc_button_equals"
                         android:textSize="25sp" />
