@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="calcAction">
+        <item name="android:background">#f7f8fa</item>
+    </style>
+    <style name="calcNumber">
+        <item name="android:background">#fafbfd</item>
+    </style>
+</resources>
